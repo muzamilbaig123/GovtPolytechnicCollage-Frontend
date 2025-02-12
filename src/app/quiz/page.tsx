@@ -16,7 +16,7 @@ export default function quiz() {
 
     return (
         <>
-            <main className="bg-gray-900 h-screen flex justify-center items-center border p-10">
+            <main className="bg-gray-900 h-screen flex justify-center items-center p-10">
 
                 <div className="text-center w-[50em]">
                     <div className="py-6">

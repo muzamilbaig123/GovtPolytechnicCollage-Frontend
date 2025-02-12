@@ -1,22 +1,12 @@
 import { useState } from "react"
+import { questions } from "@/app/utils/htmlquiz";
+
 
 export default function HtmlQuestion() {
 
     const [selectedAnswer, setSelectedAnswer] = useState("");
 
-    const questions = [
-        {
-          id: 1,
-          question: "HTML Stand For",
-          options: [
-            { id: "h1", text: "<h1>" },
-            { id: "head", text: "<head>" },
-            { id: "header", text: "<header>" }
-          ],
-          correct: "h1"
-        }
-        // Add more questions here
-      ];
+
 
     return (
         <>
