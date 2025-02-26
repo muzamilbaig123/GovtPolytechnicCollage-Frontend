@@ -1,12 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
-import questioReducer from "@/lib/slices/question/question" 
-import resultReducer from "@/lib/slices/question/question" 
+import questionReducer from "./slices/question/question" 
+import resultReducer from "./slices/result/result" 
+
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      question: questionQuizs,
-      result: resultReducer,
+      questionRed: questionReducer,
+      resultRed: resultReducer,
     },
   })
 }

@@ -1,5 +1,4 @@
 "use client"
-
 import HtmlQuestion from "@/components/HtmQuestions"
 
 export default function quiz() {
@@ -11,7 +10,6 @@ export default function quiz() {
     const prevQuiz = () => {
         console.log("prev")
     }
-
 
 
     return (

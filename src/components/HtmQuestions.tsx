@@ -1,10 +1,23 @@
-import { useState } from "react"
-import { questions } from "@/app/utils/htmlquiz";
+"use client"
+import { useEffect, useState } from "react"
+import { questions } from "../app/utils/htmlquiz";
+import { useSelector } from "react-redux";
 
+type QuestionRedType = {
+  quest: string[],
+  answer: string[],
+  trace: number, 
+}
 
 export default function HtmlQuestion() {
 
     const [selectedAnswer, setSelectedAnswer] = useState("");
+
+    const { questionRed }:QuestionRedType = useSelector(state => state);
+
+    useEffect(() => {
+      console.log(questionRed)
+    })
 
 
 

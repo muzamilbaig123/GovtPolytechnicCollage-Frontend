@@ -12,7 +12,7 @@ const initQuestion:InitQuestionType = {
     trace: 0, 
 }
 
-const questions = createSlice({
+const questionsQuiz = createSlice({
     name: "Questions",
     initialState: initQuestion,
     reducers: {
@@ -22,4 +22,7 @@ const questions = createSlice({
     },
 })
 
-export const {startExamAction} = questions.actions
+export const {startExamAction} = questionsQuiz.actions
+
+
+export default questionsQuiz.reducer
